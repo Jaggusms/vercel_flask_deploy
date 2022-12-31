@@ -2,6 +2,7 @@ from flask import Flask,request,render_template
 app = Flask(__name__)
 
 
-@app.route("/")
-def home():
-    return render_template('home.html',name="jagadeesh")
+@app.route('/')
+def login():
+    return render_template('index.html')
+
