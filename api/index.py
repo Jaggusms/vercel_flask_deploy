@@ -1,11 +1,6 @@
-from distutils.command.config import config
-from distutils.log import debug
+import ssl
 from flask import Flask,request,render_template 
-import ssl
-import numpy as np
 import pandas as pd
-import ssl
-import urllib
 
 from pymongo import MongoClient
 client = MongoClient("mongodb+srv://Jaggusmk:4321@cluster0.bzwyzf9.mongodb.net/?retryWrites=true&w=majority",ssl=True)
